@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PlayerQuery } from 'src/app/queries/player.query';
+import { players } from 'src/data/players';
 
 @Component({
   selector: 'app-grid-player-table',
@@ -7,9 +7,11 @@ import { PlayerQuery } from 'src/app/queries/player.query';
   styleUrls: ['./grid-player-table.component.scss']
 })
 export class GridPlayerTableComponent implements OnInit {
-  constructor(private query: PlayerQuery) {}
+  constructor() {}
 
-  playerList = this.query.fetchPlayers;
+  playerList = players;
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(this.playerList);
+  }
 }

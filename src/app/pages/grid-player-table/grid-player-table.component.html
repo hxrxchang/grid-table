@@ -1,1 +1,36 @@
-<p>grid-player-table works!</p>
+<div class="table-container">
+  <div class="table-header">
+    <div class="table-header-column"></div>
+    <div class="table-header-column">打率</div>
+    <div class="table-header-column">本塁打</div>
+    <div class="table-header-column">打点</div>
+  </div>
+  <div class="table-content">
+    <div class="table-content-item">
+      <div class="table-content-column player-icon-and-name">
+        <div>
+          <img
+            class="player-image"
+            src="../../../assets/baseball.png"
+            alt="プレイヤー画像"
+          />
+          <div class="player-name">
+            {{ playerList[0].name }}
+          </div>
+        </div>
+      </div>
+      <div class="table-content-column batting-average">
+        {{ playerList[0].battingAverage }}
+      </div>
+      <div class="table-content-column homerun-count">
+        {{ playerList[0].homerunCount }}
+      </div>
+      <div class="table-content-column rbi">
+        {{ playerList[0].rbi }}
+      </div>
+      <div class="additional-comment">
+        {{ playerList[0].additionalComment }}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+.table-container {
+  margin-top: 100px;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-bottom: 20px;
+}
+
+.table-header-column {
+  text-align: center;
+}
+
+.table-content-item {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto 100px;
+}
+
+.table-content-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-image {
+  width: 100px;
+  height: 100px;
+}
+
+.player-name {
+  text-align: center;
+}
+
+.additional-comment {
+  margin-top: 20px;
+  grid-column: 1 / 5;
+  padding-left: 12.5%;
+}
