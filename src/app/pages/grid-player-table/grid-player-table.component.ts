@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Player } from 'src/app/models';
 import { PlayerQuery } from 'src/app/queries/player.query';
 
 @Component({

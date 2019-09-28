@@ -4,4 +4,5 @@ export interface Player {
   battingAverage: number;
   homerunCount: number;
   rbi: number;
+  additionalComment: string;
 }
