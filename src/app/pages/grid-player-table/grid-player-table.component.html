@@ -7,30 +7,34 @@
   </div>
   <div class="table-content">
     <div class="table-content-item">
-      <div class="table-content-column player-icon-and-name">
-        <div>
-          <img
-            class="player-image"
-            src="../../../assets/baseball.png"
-            alt="プレイヤー画像"
-          />
-          <div class="player-name">
-            {{ playerList[0].name }}
+      <ng-container *ngFor="let player of playerList">
+        <div class="table-content-column player-icon-and-name">
+          <div>
+            <img
+              class="player-image"
+              src="../../../assets/baseball.png"
+              alt="プレイヤー画像"
+            />
+            <div class="player-name">
+              {{ player.name }}
+            </div>
           </div>
         </div>
-      </div>
-      <div class="table-content-column batting-average">
-        {{ playerList[0].battingAverage }}
-      </div>
-      <div class="table-content-column homerun-count">
-        {{ playerList[0].homerunCount }}
-      </div>
-      <div class="table-content-column rbi">
-        {{ playerList[0].rbi }}
-      </div>
-      <div class="additional-comment">
-        {{ playerList[0].additionalComment }}
-      </div>
+        <div class="table-content-column batting-average">
+          {{ player.battingAverage }}
+        </div>
+        <div class="table-content-column homerun-count">
+          {{ player.homerunCount }}
+        </div>
+        <div class="table-content-column rbi">
+          {{ player.rbi }}
+        </div>
+        <div class="additional-comment">
+          <p class="additional-comment-content">
+            {{ player.additionalComment }}
+          </p>
+        </div>
+      </ng-container>
     </div>
   </div>
 </div>

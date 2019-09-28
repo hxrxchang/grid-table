@@ -11,7 +11,5 @@ export class GridPlayerTableComponent implements OnInit {
 
   playerList = players;
 
-  ngOnInit() {
-    console.log(this.playerList);
-  }
+  ngOnInit() {}
 }

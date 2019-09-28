@@ -15,7 +15,7 @@
 .table-content-item {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: auto 100px;
+  grid-template-rows: auto auto;
 }
 
 .table-content-column {
@@ -36,5 +36,22 @@
 .additional-comment {
   margin-top: 20px;
   grid-column: 1 / 5;
-  padding-left: 12.5%;
+  margin-left: 9%;
+}
+
+.additional-comment-content {
+  position: relative;
+  display: inline-block;
+  background: #e0edff;
+  border-radius: 6%;
+  width: auto;
+  padding: 20px 2%;
+}
+
+.additional-comment-content:before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #e0edff;
 }
